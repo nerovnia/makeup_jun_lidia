@@ -99,6 +99,8 @@ body {
 /* Header */
 
 .header {
+  position: sticky;
+  top: 0;
   padding-top: 77px;
 }
 .header__container {
