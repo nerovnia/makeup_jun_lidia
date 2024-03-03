@@ -99,8 +99,8 @@ body {
 /* Header */
 
 .header {
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: 0; */
   padding-top: 77px;
 }
 .header__container {
@@ -140,6 +140,7 @@ body {
 /* Hero */
 
 .hero {
+  padding-top: 62px;
 }
 .hero__container {
   display: flex;
@@ -151,14 +152,57 @@ body {
 .content-hero {
   display: grid;
   align-content: start;
+  justify-items: start;
   gap: 30px;
 }
+
 .content__title {
+  font-size: 76px;
+  font-weight: 800;
+  color: #181e4b;
+  letter-spacing: -4px;
+  line-height: 117.105263%; /* 89/76 */
 }
+
+.content__title a {
+  color: #4475F2;
+  text-decoration: underline;
+}
+
+.content__title a:hover {
+  text-decoration: none;
+}
+
 .content-hero__text {
+
 }
+
+.content-hero__text p {
+  line-height: 187.5%; /* 30/16 */
+}
+
+.content-hero__text p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .content-hero__button {
+  box-shadow: 0 30px 60px 0 rgba(68, 117, 242, 0.25);
+  border-radius: 10px 10px 10px 10px; 
+  background-color: #4475F2;
+  padding: 18px 54px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 156.25%; /* 25/16 */
+  position: relative;
+  top: 0;
+  transition: all 0.3s;
 }
+
+.content-hero__button:hover {
+  top: 3px;
+  box-shadow: 0 30px 60px 0 rgba(68, 117, 242, 0.5);
+}
+
 .hero__images {
   flex: 0 1 50%;
 }
