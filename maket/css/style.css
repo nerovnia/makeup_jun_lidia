@@ -141,10 +141,43 @@ body {
 
 .hero {
   padding-top: 62px;
+  padding-bottom: 40px;
+  position: relative;
 }
 .hero__container {
   display: flex;
 }
+
+.hero__container::before, 
+.hero__container::after {
+  content: '';
+  position: absolute;
+  background-color: #4475F2;
+  box-shadow: 0 30px 60px 0 rgba(71, 74, 87, 0.25);
+}
+
+
+.hero__container::before {
+  content: "";
+  position: absolute;
+  left: calc(50% + 30px);
+  bottom: 0;
+  width: 100vw;
+  height: 150%;
+  border-radius: 20px;
+  transform: skewX(-20deg);
+  transform-origin: left bottom;
+  box-shadow: 0 30px 60px 0 rgba(71, 74, 87, 0.25);
+}
+
+.hero__container::after {
+  transform-origin: left top;
+  transform: skewX(20deg);
+  border-radius: 20px;
+  width: 100vw;
+  left: 50%
+}
+
 .hero__content {
   flex: 0 1 50%;
 }
